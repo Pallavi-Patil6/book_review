@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Book Deletion</title>
+</head>
+<body>
+    <div>
+        <h1>Delete Book</h1>
+        <div>
+            <p>Are you sure you want to delete the book <strong>{{ book.title }}</strong> by <strong>{{ book.author }}</strong>?</p>
+            <form method="POST">
+                {% csrf_token %}
+                <button type="submit">Yes, Delete</button>
+                <a href="{% url 'book_list' %}">Cancel</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

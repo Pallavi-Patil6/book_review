@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Books</h1>
+    <a href="{% url 'review_create' %}">Add Reviews</a>
+    <ul>
+        {% for review in reviews %}
+            <li>
+                {{ review.book }} by {{ review.review }} @ {{ review.created_at }}
+                <a href="{% url 'review_update' review.pk %}">Edit</a>
+                <a href="{% url 'review_delete' review.pk %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
