@@ -1,0 +1,223 @@
+/* Global Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40;
+    padding: 15px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/* Book and Review List Styling */
+.book-list, .review-list {
+    margin: 20px 0;
+}
+
+.book-item, .review-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-item h3, .review-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.book-item p, .review-item p {
+    margin: 5px 0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions a, .actions button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions a:hover, .actions button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="email"],
+form textarea,
+form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form input[type="email"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+}
+
+/* Dashboard Specific Styling */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff1df;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    color: #d99530;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-stat {
+    background-color: #ffe6c5;
+    border-left: 5px solid #D4A76;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-title {
+    font-size: 1.25rem;
+    color: #D4A76;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    color: #d99530;
+    font-weight: bold;
+}
+
+.course-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.course-item {
+    font-size: 1.1rem;
+    color: #D4A762;
+    padding: 10px;
+    background-color: #ffdbac;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Confirmation Delete Page */
+.confirm-delete {
+    text-align: center;
+    padding: 20px;
+}
+
+.confirm-delete p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.confirm-delete .actions {
+    justify-content: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ced4da;
+}
